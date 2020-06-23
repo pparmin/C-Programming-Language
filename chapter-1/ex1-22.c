@@ -14,19 +14,6 @@ int main()
 
   while ((ch = getchar()) != EOF)
   {
-    // if (ch == '\n')
-    // {
-    //   putchar(ch);
-    //   column = 0;
-    // }
-    // else {
-    //   if (SPLIT_STATE == 1) {
-    //     if (ch != ' ' || ch == '\t') {
-    //       putchar(ch);
-    //       column++;
-    //       SPLIT_STATE = 0;
-    //     }
-    //   }
     if (ch == '\n') {
       putchar(ch);
       column = 0;
@@ -37,18 +24,7 @@ int main()
       putchar('\n');
       NEWLINE = 1;
       column = 0;
-        // while (getting character) 
-        //   if (columnumber equals LINEBREAK - 1?)
-        //     --> start new line & set columnnumber to 0
-        //       --> if (char != tab or space)
-        //             add word-breaker
-        //       --> else if (char == tab or space)
-        //             save char in lastchar
-        //             continue
-          
-        //   putcharacter() into output
-        //   save character in lastch variable
-        //   increase columnnumber
+
     }
     if (NEWLINE) 
     {

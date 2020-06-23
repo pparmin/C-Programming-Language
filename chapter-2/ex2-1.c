@@ -40,8 +40,8 @@ int main()
     float f;
     double d;
 
-    // 1 byte = 8 bits = 2*(2^8)
-    // 2*2 = 4 * 2 = 8 * 2 = 16
+    int test = 0x10;
+    printf("test: %d", test);
     printf("COMPUTED SIZES\n");
     printf("Computed size of signed ch: %lld\n", pow(2, bytes_to_bits(sizeof(ch))));
     printf("Computed size of signed int: %lld\n", ((pow(2, bytes_to_bits(sizeof(i)))) / 2) - 1);
